@@ -1,0 +1,7 @@
+# See https://github.com/WidgetsBurritos/d8-studyguide/blob/master/4-back-end-development/4.4-essential-apis-services.md
+# See https://www.drupal.org/docs/drupal-apis/services-and-dependency-injection/services-and-dependency-injection-in-drupal-8
+
+services:
+  Drupal\hello\Service\HelloWorld:
+    class: Drupal\hello\Service\HelloWorld
+    arguments: ['@config.factory']
